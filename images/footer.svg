@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1366" height="435.22" viewBox="0 0 1366 435.22">
+	<defs>
+		<style>
+			.cls-1 {
+			fill: #f05544;
+			<!-- fill: #fff; -->
+			fill-rule: evenodd;
+			}
+		</style>
+	</defs>
+	<path id="Footer" class="cls-1" d="M-3,1980.27l1370-182.48V2234H-3V1980.27Z" transform="translate(0 -1797.78)"/>
+</svg>
