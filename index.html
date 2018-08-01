@@ -1,125 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<title>Port 32 Fort Lauderdale - A Marina Collection</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-	<link rel="manifest" href="manifest.json">
-	<meta name="msapplication-TileColor" content="#f05544">
-	<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
-	<meta name="theme-color" content="#f05544">
+<meta charset="UTF-8">
+<title>샘플</title>
+<meta name="viewport" content="width=device-width">
+
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+$(function(){
+	$("#menubtn").click(function(){
+		$("#menu").slideToggle();
+	});
+});
+</script>
 </head>
 <body>
-	<h1 style="position:relative background-color:white left:50%">사이트 수정중입니다.</h1>
-	<!-- -->
-	<div class="content">
-		<section class="hero_banner">
-			<!-- use this video for now https://player.vimeo.com/external/260489792.hd.mp4?s=e746ee26ebf0ceb4d85112acef10f1c282268830&profile_id=174 -->
-			<!-- <video id="hero_video" class="hero_video" muted loop playsinline preload="auto" src="assets/958028085.mp4"></video> -->
-			
-			<div class="video_wrapper">
-				<video id="hero_video" class="hero_video" muted playsinline preload="auto" poster="images/libre_textile.jpg" src="https://player.vimeo.com/external/260489792.hd.mp4?s=e746ee26ebf0ceb4d85112acef10f1c282268830&profile_id=174"></video>
-			</div>
-			<h1 class="port32_logo"><img src="images/port32_logo.svg" alt=""></h1>
-			<div class="ct">
-				<p class="more_ind">Learn More</p>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 102">
-					<path class="scroller-path" d="M2.5 2.5v97" fill="none" stroke="#cfe0ec" stroke-width="5" stroke-linecap="square"/>
-				</svg>
-			</div>
-		</section>
-		
-		<div class="info_content">
-			<section class="info_sec">
-				<div class="wrapper">
-					<div class="row">
-						<div class="col left">
-							<h2 class="prime_head" data-duration='2'>Fort Lauderdale’s newest yacht marine service facility</h2>
-							<p class="appear fromBottom">Announcing Port 32 Fort Lauderdale, a new in-water yacht facility that will offer storage, repair and retrofits for vessels up to 150 feet. Port 32 Fort Lauderdale is located west of I-95 on the New River,
-								just north of Marina Mile. With convenient proximity to both the<br/> Fort Lauderdale (7 miles) and Miami (30 miles) international airports, Port 32 Fort Lauderdale will offer competitive yachting services.</p>
 
-							<p class="appear fromBottom">Featured Future Services Include:</p>
-							<div class="row appear fromBottom">
-								<div class="col colleft">
-									<ul class="services_list">
-										<li>Captain’s/Crew Lounge with TV, Wi-Fi, laundry, shower facilities, and entertainment plus grilling area</li>
-										<li>The only marine fuel dock on the New River</li>
-										<li>Concierge services</li>
-									</ul>
-								</div>
-								<div class="col colright">
-									<ul class="services_list">
-										<li>Tender hauling, service, storage, and repair up to <br/>55 feet in length</li>
-										<li>Multi-purpose storage units</li>
-										<li>Yacht service vendors to address all repair/retrofit needs</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col right">
-							<img class="appear" data-appear-y='30' data-appear-offset="75%" src="images/map.svg" alt="">
-						</div>
-					</div>
-					<h3 class="ct_title appear fromBottom">Phase I preleasing to begin May 2018 with slips available Summer 2018</h3>
-					<div class="contact_sec">
-						<h2 class="prime_head" data-duration='2'>Better boating begins here.</h2>
-						<h3 class="ct_title appear fromBottom">Sign up for future updates or inquire about slip availability</h3>
-						<form action="/" class="contact_form appear fromBottom" id="contact_form" name='contact_form'>
-							<div>
-								<input type="text" name="name" id="name" placeholder="Name" required>
-							</div>
-							<div>
-								<input type="email" name="email" id="email" placeholder="Email" required>
-							</div>
-							<div id="captchaimage1" class="captcha-image">
-								<div id="imgdiv"><img id="img" src="captcha.php" alt="" ><img id="reload" class="reloadSVG" src="images/refresh.svg" height="30"  alt="" /></div>
-								<input type="text" maxlength="6" name="captcha" id="captcha" class="captcha-field" required placeholder="enter captcha here">
-							</div>
-							<span class="error_msg"></span>
-							<button class="submit_btn" type="submit">submit</button>
-						</form>
-					</div>
-				</div>
-			</section>
-			<footer class="site_footer">
-				<div class="footer_wrapper appear fromBottom">
-					<address class="site_address">
-						<span>office - <a href="tel:8432006764" target="_blank">843.200.6764</a></span>
-						1915 sw 21st avenue,<br/>
-						fort lauderdale, fl 33312
-					</address>
-					<div class="footer_meta">
-						<h2 class="footer_logo"><img src="images/port32_logo_footer.svg" alt=""></h2>
-						<a class="helium_tag" href="//heliumcreative.com" target="_blank"><img src="images/helium_tag.svg" alt=""></a>
-					</div>
-				</div>
-			</footer>
-		</div>
+<header class="header">
+<div class="header-inner">
+<div class="header-site">
+	<div class="site">
+	<h1><a href="#"><img src="img/logo-large.png" alt="TimeSwitch" width="250" height="33"></a></h1>
 	</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/CSSPlugin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/ScrollToPlugin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+</div>
+
+<div class="header-nav">
+
+	<button type="button" id="menubtn">
+	<i class="fa fa-bars"></i><span>MENU</span>
+	</button>
+
+	<nav class="menu" id="menu">
+	<ul>
+	<li><a href="#">메인</a></li>
+	<li><a href="#">연혁</a></li>
+	<li><a href="#">사업 소개</a></li>
+	<li><a href="#">채용 정보</a></li>
+	<li><a href="#">문의</a></li>
+	</ul>
+	</nav>
+</div>
+</div>
+</header>
+
+
+<div class="photo">
+	<div class="top">
+	<img src="img/header.jpg" alt="" class="topimg">
+	<p class="catch">TimeSwitch는 데이터 축적과<br>
+	분석/해석 서비스를 제공합니다.</p>
+	</div>
+</div>
+
+
+<div class="pickup">
+<div class="pickup-1">
+	<div class="summary">
+	<a href="#">
+	<i class="fa fa-database"></i>
+	<h1>데이터 분석/해석</h1>
+	<p>목적에 맞는 다양한 각도로<br>
+	데이터를 분석/해석합니다.</p>
+	</a>
+	</div>
+</div>
+
+<div class="pickup-2">
+	<div class="summary">
+	<a href="#">
+	<i class="fa fa-bar-chart-o"></i>
+	<h1>데이터 시각화</h1>
+	<p>해석 결과는 데이터 시각화해서<br>
+	활용할 수 있게 합니다.</p>
+	</a>
+	</div>
+</div>
+
+<div class="pickup-3">
+	<div class="summary">
+	<a href="#">
+	<i class="fa fa-envelope"></i>
+	<h1>24시간 지원</h1>
+	<p>24시간 대응 팀으로<br>
+	장애에 신속하게 대응합니다.</p>
+	</a>
+	</div>
+</div>
+</div>
+
+
+<div class="info">
+<div class="info-main">
+	<div class="news">
+	<h1>공지사항</h1>
+	<ul>
+	<li><a href="#">
+		<time datetime="2014-10-15">10/15</time>
+		<div class="text">데이터센터 유지 보수를 수행합니다.</div>
+	</a></li>
+	<li><a href="#">
+		<time datetime="2014-10-05">10/05</time>
+		<div class="text">안드로이드 애플리케이션 버전 1.2를 출시했습니다.</div>
+	</a></li>
+	<li><a href="#">
+		<time datetime="2014-09-22">09/22</time>
+		<div class="text">세미나/캠페인과 관련된 공지사항</div>
+	</a></li>
+	<li><a href="#">
+		<time datetime="2014-09-15">09/15</time>
+		<div class="text">그래프 표시의 변경 방식을 쉽게 바꿨습니다.</div>
+	</a></li>
+	</ul>
+	</div>
+</div>
+<div class="info-sub">
+	<div class="follow">
+
+	<p class="follow-info">최신 정보를 여기서도 받아보세요!</p>
+
+	<ul>
+	<li><a href="#" class="follow-tw">
+		<i class="fa fa-fw fa-twitter"></i>
+		Twitter
+	</a></li>
+	<li><a href="#" class="follow-fb">
+		<i class="fa fa-fw fa-facebook"></i>
+		Facebook
+	</a></li>
+	<li><a href="#" class="follow-gp">
+		<i class="fa fa-fw fa-google-plus"></i>
+		Google+
+	</a></li>
+	</ul>
+	</div>
+</div>
+</div>
+
+<footer class="footer">
+<div class="footer-inner">
+	<div class="copyright">
+	<p>Copyright &copy; TimeSwitch</p>
+	</div>
+</div>
+</footer>
+
+
 </body>
 </html>
