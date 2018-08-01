@@ -49,9 +49,9 @@ body	{margin: 0;
 	padding-bottom: 40px;
 	font-size: 38px}
 
-.summary .fa-database	{background-color: #bfbd13}
+.summary .fa-medkit	{background-color: indianred}
 
-.summary .fa-bar-chart-o	{background-color: #c58839}
+.summary .fa-laptop	{background-color: #bfbd13}
 
 .summary .fa-envelope	{background-color: #859f46}
 
