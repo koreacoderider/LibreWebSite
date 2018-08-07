@@ -32,20 +32,12 @@
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script>
 //국가 시작
-var requestUrl = "http://ip-api.com/json";
-
-$.ajax({
-  url: requestUrl,
-  type: 'GET',
-  success: function(json)
-  {
-    console.log("My country is: " + json.country);
-  },
-  error: function(err)
-  {
-    console.log("Request failed, error= " + err);
-  }
-});
+var userLang = navigator.language || navigator.userLanguage;
+var lang = userLang.subString(0,2);
+if (lang == "ko")
+    window.location.replace('index_kr.html');
+else
+    window.location.replace('index_en.html');
 //국가 끝
 	
 $(function(){
