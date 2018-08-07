@@ -33,7 +33,7 @@
 <script>
 //국가 시작
 var userLang = navigator.language || navigator.userLanguage;
-var lang = userLang.subString(0,2);
+var lang = userLang.substr(0,2);
 if (lang == "ko")
     window.location.replace('index_kr.html');
 else
